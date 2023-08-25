@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.booklist{
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    
+}
+.book{
+    
+    border: 3px solid green;
+    width: 300px;
+    box-shadow: 2px 2px 3px 5px black;
+}
+.book img{
+    width: 100%;
+}
+h1{
+    text-align: center;
+    padding: 1rem;
+
+}
+.book h5{
+    color: blue;
+    font-size: large;
+}
+.book h4{
+    color: red;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+@media (min-width:765px) {
+    .booklist{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
